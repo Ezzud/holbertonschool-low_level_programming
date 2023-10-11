@@ -1,3 +1,5 @@
 main.c
 main.o
 a.out
+main.s
+main.c.s
