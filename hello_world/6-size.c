@@ -13,6 +13,6 @@ int main(void)
 	long long int llintV;
 	float floatV;
 
-	printf("Size of a char: %lu byte(s)\nSize of a int: %lu byte(s)\nSize of an long int: %lu byte(s)\nSize of a long long int: %lu byte(s)\nSize of a float: %lu byte(s)\n", sizeof(charV), sizeof(intV), sizeof(lintV), sizeof(llintV), sizeof(floatV);
+	printf("Size of a char: %lu byte(s)\nSize of a int: %lu byte(s)\nSize of an long int: %lu byte(s)\nSize of a long long int: %lu byte(s)\nSize of a float: %lu byte(s)\n", (long unsigned int)sizeof(charV), (long unsigned int)sizeof(intV), (long unsigned int)sizeof(lintV), (long unsigned int)sizeof(llintV), (long unsigned int)sizeof(floatV));
 	return (0);
 }
