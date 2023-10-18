@@ -1,12 +1,17 @@
-#include <stdio.h>
-#include <ctype.h>
-
+#include <string.h>
+#include <unistd.h>
+#include "main.h"
 /**
  * main - Entry point
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char text[] = "_putchar\n";
+	int i;
+
+	for (i = 0; i < (int) strlen(text); i++)
+		_putchar(text[i]);
+
 	return (0);
 }
