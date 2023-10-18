@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * _abs - Main Entry
@@ -6,5 +7,5 @@
  */
 int _abs(int c)
 {
-	return (c*((2*c+1)%2));
+	return abs(c);
 }
