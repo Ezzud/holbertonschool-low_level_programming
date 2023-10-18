@@ -27,7 +27,7 @@ void times_table(void)
 	{
 		for (m = 0; m < 10; m++)
 		{
-			if ((h * m) < 10)
+			if (((h * m) < 10) && m != 0)
 				_putchar(' ');
 			print_int(h * m);
 			if (m != 9)
