@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * _isupper - Main Entry
- * @c: Character we want to test
- * Return: If the character is uppercase
+ * @c: Char we want to test
+ * Return: If the char is uppercase
  */
 int _isupper(char c)
 {
