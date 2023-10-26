@@ -2,7 +2,7 @@
 
 /**
  * _strlen - Main entry
- * @str: String to count
+ * @s: String to count
  *
  * Return: Length of the string
  */
@@ -12,6 +12,5 @@ int _strlen(char *s)
 
 	while (*s++)
 		l++;
-
 	return (l);
 }
