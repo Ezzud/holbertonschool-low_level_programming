@@ -14,7 +14,7 @@ int check_if_prime(unsigned int n, unsigned int c)
 		else
 			return (0);
 	}
-	return (0 + is_prime(n, c + 1));
+	return (0 + check_if_prime(n, c + 1));
 }
 /**
  * is_prime_number - Main entry
@@ -29,5 +29,5 @@ int is_prime_number(int n)
 		return (0);
 	if (n == 1)
 		return (0);
-	return (is_prime(n, 2));
+	return (check_if_prime(n, 2));
 }
