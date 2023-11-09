@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-/*
-* malloc_checked - Check a memory allocation
-* @b: Size
-* Return: pointer to the allocation memory
-*/
+/**
+ * malloc_checked - Check a memory allocation and exit if error
+ * @b: Size
+ * Return: pointer to the allocation memory
+ */
 void *malloc_checked(unsigned int b)
 {
 	void *a;
