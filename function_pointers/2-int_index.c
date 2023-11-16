@@ -4,7 +4,7 @@
  * @array: Array of int
  * @size: Array size
  * @cmp: Pointer to the function for comparing
- * Return: index of the first occurence from function. 
+ * Return: index of the first occurence from function.
  * Returns -1 if empty array of if error
  */
 int int_index(int *array, int size, int (*cmp)(int))
