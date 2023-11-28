@@ -3,22 +3,19 @@
 #include <stddef.h>
 
 /**
- * print_list - Print content of a linked
- * list
+ * print_dlistint - Print content of a linked
+ * list (double)
  * @h: Pointer to the linked list
  * Return: Number of elements
  */
-size_t print_list(const list_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
-	const list_t *head = h;
+	const dlistint_t *head = h;
 	size_t n_count = 0;
 
 	while (head != NULL)
 	{
-		if (head->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", head->len, head->str);
+		printf("%d\n", head->n);
 		head = head->next;
 		n_count++;
 	}
