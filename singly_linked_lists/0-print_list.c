@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
-
 /**
  * print_list - Print content of a linked
  * list
