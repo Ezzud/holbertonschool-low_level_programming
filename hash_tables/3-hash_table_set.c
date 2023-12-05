@@ -1,12 +1,12 @@
 #include "hash_tables.h"
 /**
- * add_hash_node - Add a node at the start of a table
+ * add_h_node - Add a node at the start of a table
  * @head: Head of the table
  * @key: Key of the table
  * @value: Value of the node
  * Return: Head of the table
  */
-hash_node_t *add_hash_node(hash_node_t **head, const char *key, const char *value)
+hash_node_t *add_h_node(hash_node_t **head, const char *key, const char *value)
 {
 	hash_node_t *temp;
 
@@ -50,7 +50,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	k_index = key_index((unsigned char *)key, ht->size);
-	if (add_hash_node(&(ht->array[k_index]), key, value) == NULL)
+	if (add_h_node(&(ht->array[k_index]), key, value) == NULL)
 		return (0);
 	return (1);
 }
